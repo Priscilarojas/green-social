@@ -1,35 +1,55 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Patua One', cursive;
 }
-nav {
-  /*outline: 1px solid yellow;*/
-}
+
 ul {
-  /*outline: 1px solid blue;*/
   list-style: none;
   padding: 0;
   margin: 0;
   background: #2e2e2a;
-  line-height: 40px;
-  overflow: auto;
+  line-height: 60px;
 
 }
+
+h1{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 31px;
+  position: absolute;
+  top: -1%;
+  left: 3%;
+  color: white;
+}
+
 li {
-  /*outline: 1px solid red;*/
-  width: 100px;
+  width: 155%;
   display: inline-block;
   text-align: center;
 }
 a {
-  /*outline: 1px solid green;*/
   text-decoration: none;
   display: block;
   color: #fff;
+  text-align: center;
 }
 
 a:hover {
-  background: #f9a91a;
-  color: #000;
 }
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+input{
+  position: absolute;
+  top: 26px;
+  left: 26%;
+  width: 38%;
+}
+button{
+  font-family: 'Patua One', cursive;
+  top: 21px;
+  width: 110px;
+  height: 30px;
+  left: 86%;
+  position: absolute;
+  font-size:17px;
+  color:black;
+  background:#fff;
+  border:0px;
+      }
+}
