@@ -1,13 +1,14 @@
 body {
   font-family: 'Patua One', cursive;
   margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #2e2e2a;
+  background: green;
   line-height: 60px;
 
 }
@@ -16,7 +17,7 @@ h1{
   font-family: 'Berkshire Swash', cursive;
   font-size: 31px;
   position: absolute;
-  top: -3%;
+  top: -2%;
   left: 3%;
   color: white;
 }
@@ -51,9 +52,23 @@ button{
   background:#fff;
   border:0px;
   }
-  .fondo{
-    background-color: red;
-    margin: 100%;
-    height: 100%;
+  .one{
+    top: 90%;
+    font-size: 40px;
+    width: 202px;
+    left: 41%;
+    height: 57px;
   }
-}
+  h2{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 24%;
+    font-size: 100px;
+    color: #fff;
+
+  }
+  img{
+    width: 100%;
+    height: 100vh;
+  }
