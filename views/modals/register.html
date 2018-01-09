@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Bootstrap3 css -->
     <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Raleway font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Font-awesome -->
@@ -19,23 +19,96 @@
     <!-- Logo favicon -->
     <link rel="icon" type="image/png" href="../assets/icons/favicon.png"/>
     <!-- main.css -->
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="../css/modals.css"/>
 </head>
 <body>
+    <main class=" ">
+        <section class="container">
+            <div class="row">
+                <div class="col s12">
+                        <div class="container white z-depth-2">
+                                <!-- tabs -->
+                                <ul class="tabs light-green">
+                                    <li class="tab col s3"><a class="white-text active" href="#login">Iniciar Sesión</a></li>
+                                    <li class="tab col s3"><a class="white-text" href="#register">Registrarse</a></li>
+                                </ul>
+                                <!-- Login Modal -->
+                                <div id="login" class="col s12">
+                                    <form class="col s12">
+                                        <div class="form-container">
+                                            <h3 class="light-green-text text-accent-4">Hola</h3> 
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Contraseña</label>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <center>
+                                                <button class="btn waves-effect waves-light light-green accent-4" type="submit" name="action">Conectate</button>
+                                                <br>
+                                                <br>
+                                                <a href="">Olvidastes tu contraseña</a>
+                                            </center>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Register Modal -->
+                                <div id="register" class="col s12">
+                                    <form class="col s12">
+                                        <div class="form-container">
+                                            <h3 class="light-green-text text-accent-4">Bienvenida</h3>
+                                            <div class="row">
+                                                <div class="input-field col s6">
+                                                    <input id="last_name" type="text" class="validate">
+                                                    <label for="last_name">Nombres</label>
+                                                </div>
+                                                <div class="input-field col s6">
+                                                    <input id="last_name" type="text" class="validate">
+                                                    <label for="last_name">Apellidos</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="email-confirm" type="email" class="validate">
+                                                    <label for="email-confirm">Validar email</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Contraseña</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="password-confirm" type="password" class="validate">
+                                                    <label for="password-confirm">Validar contraseña</label>
+                                                </div>
+                                            </div>
+                                            <center>
+                                                <button class="btn waves-effect waves-ligth light-green accent-4" type="submit" name="action">Enviar</button>
+                                            </center>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                </div>
+            </div>
 
-    <main class="vh100 bg-img ">
-        <div class="container-flex-column align-items">
-            <!-- logos -->
-            <figure class="">
-                <img class="img-responsive white-logo" src="../assets/images/logo-white.png" alt="white logo">
-                <img class="img-responsive pink-logo" src="../assets/images/logo-pink2.png" alt="pink logo">
-            </figure>
-            <!-- buttons -->
-            <div class="btn-grupo">
-                <a class="btn btn-default btn-lg lyft-btn-1" href="#" role="button">Login</a>
-                <a class="btn btn-default btn-lg lyft-btn-1" href="signup.1.html" role="button">Sign up</a>
-            </div>    
-        </div>    
+        </section>
+        
     </main>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -45,8 +118,8 @@
     <!-- bootsrap4 js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- bootstrap3 js -->
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- app.js -->
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript" src="../js/app.js"></script> -->
 </body>
 </html>
