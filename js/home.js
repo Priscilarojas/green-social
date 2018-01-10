@@ -6,6 +6,8 @@ $(document).ready(function() {
   $('.slider').slider({ full_width: true });
   // F. Modal
   $('.modal').modal();
+  // Reinitialize all the Materialize labels on the page
+  Materialize.updateTextFields()
 
   // Initialize Firebase
   var config = {
@@ -37,27 +39,85 @@ $(document).ready(function() {
     });
   }
 
-  // bring values from register form modal
-  var $firstName = $('#first-name');
-  // console.log('firstName');
-  var $lastName = $('#last-name');
-  // console.log('lasttName');
-  var $email = $('#email');
-  // console.log('email');
-  var $password = $('#password');
-  // console.log('password');
-  var $registerBtn = $('#register-btn');
-  // console.log('register-btn');
-
-  // bring values from log-in form modal
-  var $userEmail = $('#user-email');
-  var $userPassword = $('#user-password"');
-  var $loginBtn = $('#log-in-btn"');
-
   // boolean var to validate log-in-btn 
+  var validateName = false;
+  var validateLastName = false;
   var validateEmail = false;
   var validatePassword = false;
- 
+
+  //  REGISTER MODAL
+
+  // bring values from register form modal
+  var $firstName = $('#first-name');
+  // console.log($('#firstName').val());
+  var $lastName = $('#last-name');
+  // console.log($('#lasttName').val());
+  var $email = $('#email');
+  // console.log($('#email').val()) 
+  var $password = $('#password');
+  // console.log($('#password').val());
+  var $registerBtn = $('#register-btn');
+  // console.log($('#register-btn').val());
+
+  // Validate name 
+  // $name.on('input', function(event){
+  //   if($firstName.val().length >= 4) {
+  //     validateName = true;
+  //     activeButton(); 
+  //   } else {
+  //     desactiveButton();
+  //   }
+  // });
+  // Validate last name 
+  // $name.on('input', function(event){
+  //   if($lastName.val().length >= 4) {
+  //     validateLastName = true;
+  //     activeButton(); 
+  //   } else {
+  //     desactiveButton();
+  //   }
+  // });
+  // validate email
+  $email.on('input', function(event) {
+    // console.log(event.target.value);
+    var REGEXEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
+    if (REGEXEMAIL.test($(this).val())) {
+      validateEmail = true;
+      activeBtn(); 
+    } else {
+      desactiveBtn();
+    }
+  });
+  // validate psw
+  $password.on('input', function() {
+    if ($(this).val().length >= 6) {
+      validatePassword = true;
+      activeBtn(); 
+    } else {
+      desactiveBtn(); 
+    }
+  });
+  // Send info
+  $('form > #register-btn').on('click', function(event) {
+    event.preventDefault();
+    localStorage.email = $email.val();
+    localStorage.password = $password.val();
+    window.location.href = 'user-profile.html';
+  });
+
+  // $( "p" ).click(function() {
+  //   $( this ).toggleClass( "highlight" );
+  // });
+
+
+
+  // LOG-IN MODAL 
+  
+  // bring values from log-in form modal
+  var $userEmail = $('#user-email');
+  var $userPassword = $('#user-password');
+  var $loginBtn = $('#log-in-btn');
+
   $userEmail.on('input', function() {
     if ($(this).val() === localStorage.email) {
       // console.log(localStorage.email);
@@ -72,23 +132,29 @@ $(document).ready(function() {
     }
   });
 
+  // login function
   $loginBtn.on('click', function(event) {
     event.preventDefault();
-    if (validateEmail && validatePassword) {
-      alert('Validación Completa');
-      $('form > button').attr('disabled', false);
-      window.location.href = '../views/user-profile.html';
+    if (validateEmail && validatePassword) { // If both are true
+      activeBtn();
+      // window.location.href = '#';
     } else {
-      desactiveButton()
-      alert('Vuelve a intentarlo');
-      window.location.href = '../views/home.html';
+      desactiveBtn();
     }
-  });
+  }); 
 
-  // disabled btn
-  function desactiveButton() {
-    $('form > button').attr('disabled', 'disabled');
+  // btn active
+  function activeBtn() {
+    if (validateEmail && validatePassword) {
+      $("#registerBtn").prop("disabled", true); 
+    }
+  }
+  // btn desactive
+  function desactiveBtn() {
+    $("#registerBtn").prop("disabled", false); 
   } 
 
-
+  // $('form > button').on('click', (function(event) {
+  //   $( this ).toggleClass( "disabled" );
+  // });
 }); // END
