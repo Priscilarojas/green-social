@@ -1,24 +1,24 @@
 /* RESET */
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
-/* GLOBAL */
+/* GLOBAL
 body {
     /* background: rgb(218, 77, 206); */
     /* background-image: url(); */
     /* background-color: blue; */
-    height: 100vh;
-    width: 100%;
-}
+    /* height: 100vh; */
+    /* width: 100%; */
+} */
 
 /* ****** MODALS ****** */
 
 /* modal materialize */
 .modal {
-    width: 45vh;
+    width: 47vh;
 }
 
 .modal.modal-fixed-footer .modal-content {
@@ -30,7 +30,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-   
+    /* opacity: .5; */
 }
 
 /* titles */
@@ -39,12 +39,16 @@ body {
     position: relative;
 }
 
-.row {
+.register >.row {
     margin-bottom: -1px;
 }
 
-underline
-.strikeThrough::before {
+.log-in >.row {
+    margin-bottom: 5px;
+}
+
+/* underline */
+/* .strikeThrough::before {
     content: " ";
     background-color: #1fb941;
     position: absolute;
@@ -52,7 +56,7 @@ underline
     margin: .3em .5em -.3em 0;
     height: .15em;
     width: 40%;
-}
+} */
 
 /* .strikeThrough::after {
     content: " ";
