@@ -26,14 +26,69 @@ $(document).ready(function() {
 
   function googleLogin() {
     var provider = new firebase.auth.GoogleAuthProvider();
-    // esta es la doc de firebase
+    //  firebase doc
     firebase.auth().signInWithPopup(provider).then(function(result) {
-      // guardamos el usuario que nos trae resuslt
+      // save user
       user = result.user;
-      // mostramos su contenido
+      //show its content
       console.log(user);
-      // ocultamos el div de login
+      // hide log'in div
       $('#login').fadeOut();
     });
   }
+
+  // bring values from register form modal
+  var $firstName = $('#first-name');
+  // console.log('firstName');
+  var $lastName = $('#last-name');
+  // console.log('lasttName');
+  var $email = $('#email');
+  // console.log('email');
+  var $password = $('#password');
+  // console.log('password');
+  var $registerBtn = $('#register-btn');
+  // console.log('register-btn');
+
+  // bring values from log-in form modal
+  var $userEmail = $('#user-email');
+  var $userPassword = $('#user-password"');
+  var $loginBtn = $('#log-in-btn"');
+
+  // boolean var to validate log-in-btn 
+  var validateEmail = false;
+  var validatePassword = false;
+ 
+  $userEmail.on('input', function() {
+    if ($(this).val() === localStorage.email) {
+      // console.log(localStorage.email);
+      validateEmail = true;
+    }
+  });
+
+  $userPassword.on('input', function() {
+    if ($(this).val() === localStorage.password) {
+      // console.log(localStorage.password);
+      validatePassword = true;
+    }
+  });
+
+  $loginBtn.on('click', function(event) {
+    event.preventDefault();
+    if (validateEmail && validatePassword) {
+      alert('Validación Completa');
+      $('form > button').attr('disabled', false);
+      window.location.href = '../views/user-profile.html';
+    } else {
+      desactiveButton()
+      alert('Vuelve a intentarlo');
+      window.location.href = '../views/home.html';
+    }
+  });
+
+  // disabled btn
+  function desactiveButton() {
+    $('form > button').attr('disabled', 'disabled');
+  } 
+
+
 }); // END

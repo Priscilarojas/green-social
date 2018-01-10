@@ -1,5 +1,6 @@
-
-
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+// Create a function to make an splash effect 
+$(document).ready(function() {
+  setTimeout(function() {
+    window.location.href = 'views/home.html';
+  }, 3000);
+}); // END  $(document).ready(function(){}
