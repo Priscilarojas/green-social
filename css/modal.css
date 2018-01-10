@@ -21,6 +21,10 @@ body {
     width: 47vh;
 }
 
+.vh90 {
+    height: 90vh;
+}
+
 .modal.modal-fixed-footer .modal-content {
     height: calc(100% - 0px);
 }
@@ -42,6 +46,14 @@ body {
     background-size: 100%;
 }
 
+.btn-modal:nth-of-type(1) {
+    left: 40%;
+}
+
+.slides {
+    height: 90vh;
+}
+
 nav {
     color: #fff;
     background-color: #4caf50;
@@ -50,25 +62,25 @@ nav {
     line-height: 56px;
 }
 /* titles */
-.strikeThrough {
+/* .strikeThrough {
     font-size: 1em;
     position: relative;
 }
 
 .strikeThrough {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  overflow: visible;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: visible;
 }
 
 .strikeThrough:after {
-  content: 'O CONECTATE CON';
-  font-size: 16px;
-  background-color: rgb(244, 236, 232);
-  position: relative;
-  top: -0.8em;
-  padding: 0 2em;
-}
+    content: 'O CONECTATE CON';
+    font-size: 16px;
+    background-color: rgb(244, 236, 232);
+    position: relative;
+    top: -0.8em;
+    padding: 0 2em;
+} */
 
 .register >.row {
     margin-bottom: -1px;
@@ -156,6 +168,13 @@ nav {
     background-color: #3B5998;
     color: white;
 }
+
+/* forms */
+
+/* .wrong {
+
+} */
+
 
 /* ****** user-profile style  ****** */
 
