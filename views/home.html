@@ -1,242 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RED SOCIAL modal</title>
-    <!-- Materialize css Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Bootstrap css -->
-    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-    <!-- Raleway font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!-- Font-awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- Logo favicon -->
-    <!-- <link rel="icon" type="image/png" href="../assets/icons/favicon.png"/> -->
-    <!-- home.css -->
-    <link rel="stylesheet" href="../css/home.css">
-    <!-- modal.css -->
-    <link rel="stylesheet" href="../css/modal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>USER PROFILE</title>
+  <!-- Materialize css Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap css -->
+  <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+  <!-- Raleway font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Font-awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Logo favicon -->
+  <!-- <link rel="icon" type="image/png" href="../assets/icons/favicon.png"/> -->
+  <!-- home.css -->
+  <link rel="stylesheet" href="../css/main.css">
+
 </head>
 <body>
+  <!-- navigator -->
   <nav data-activates="mobile-demo" class="button-collapse">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Dimensión Vegana</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Iniciar Sesión</a></li>
-        <li><a href="#">Registarte</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Información</a></li>
+        <li><a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a></li>
+        <li><a href="https://twitter.com" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="https://mail.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a></li>
+        <li><a href="#"><i class="material-icons">add</i></a></li>
+        <li><a href="../index.html"><i class="material-icons">cancel</i></a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Iniciar Sesión</a></li>
-        <li><a href="#">Registarte</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Información</a></li>
-      </ul>
+      <!-- <div class="side-nav"> -->
+      <div class="side-nav people-list" id="mobile-demo">
+        <ul class="list">
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Vincent</div>
+              <div class="status">
+                <i class="fa fa-circle online"></i> online
+              </div>
+            </div>
+          </li>
+            
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_02.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Aiden Chavez</div>
+              <div class="status">
+                <i class="fa fa-circle offline"></i> left 7 mins ago
+              </div>
+            </div>
+          </li>
+            
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_03.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Mike Thomas</div>
+              <div class="status">
+                <i class="fa fa-circle online"></i> online
+              </div>
+            </div>
+          </li>
+            
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_04.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Erica Hughes</div>
+              <div class="status">
+                <i class="fa fa-circle online"></i> online
+              </div>
+            </div>
+          </li>
+            
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_05.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Ginger Johnston</div>
+              <div class="status">
+                <i class="fa fa-circle online"></i> online
+              </div>
+            </div>
+          </li>
+            
+          <li class="clearfix">
+            <img class="circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_06.jpg" alt="avatar" />
+            <div class="about">
+              <div class="name">Tracy Carpenter</div>
+              <div class="status">
+                <i class="fa fa-circle offline"></i> left 30 mins ago
+              </div>
+            </div>
+          </li>
+        </ul> <!-- ul>.list END-->
+      </div> <!-- div class="side-nav END-->
     </div>
   </nav>
 
-  <!-- slider structure -->
-  <div class="vh90 slider ">
-    <ul class="vh90 slides">
-      <li>
-        <img src="../assets/images/asparagus.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>Que la comida sea tu alimento y el alimento tu medicina.</h3>
-        </div>
-      </li>
-      <li>
-        <img src="../assets/images/comi.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Caliente la comida y fría la bebida. Porque para ser sanas deben ser así.</h3>
-        </div>
-      </li>
-      <li>
-        <img src="../assets/images/maxresdefault.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3> Sueña todo lo que quieras... que los sueños son el alimento del alma, como la comida lo es del cuerpo.</h3>
-        </div>
-      </li>
-      <li>
-        <img src="../assets/images/santa-fe.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>Una comida equilibrada es una especie de poema al desarrollo de la vida.</h3>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <!-- button -->
-  <center>
-    <!-- <a class="dropdown-button btn" href="#" data-activates="dropdown1">Registrate</a> -->
-    <!-- <button id="register-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" disabled>Conéctate</button> -->
-    <!-- <button id="log-in-btn" class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal2">Iniciar Sesión</button>> -->
-    <!-- <button id="log-in-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" disabled>Conectate</button> -->
-    <a class="waves-effect waves-light btn modal-trigger light-green accent-4 btn-modal" href="#modal2">Iniciar Sesión</a>
-    <a class="waves-effect waves-light btn modal-trigger light-green accent-4 btn-modal" href="#modal1">Registrate</a>
-  </center>
-
-  <main class="bg container">
-    <!-- modal register -->
-    <section class="register">
-        <!-- Modal Trigger button-->
-        <!-- <a class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal1">Registrate</a> -->
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal modal-fixed-footer">
-          <div class="modal-content">
-            <div class="row bg-gif">
-              <form class="col s12 ">
-                <div class="row">
-                  <div class="">
-                    <br>
-                    <h6 class="strikeThrough center-align"><span>---------------- Registrate con ----------------</span></h3>
-                    <center class="social">
-                      <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
-                      <a href="https://twitter.com" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
-                      <a href="https://mail.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
-                    </center>
-                      <br>
-                      <h6 class="strikeThrough center-align"><span>------------------- O -------------------</span></h3>
+  <!-- section user profile and coments -->
+  <main class="bg-gif1">
+    <section class="box-coments">
+      <!--  body box begin-->
+      <div class="body-card">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 m8 s12 offset-m2 offset-l4">
+              <div class="box-card">
+                <div class="card">
+                  <!-- <figure class="photo-user left-align"> -->
+                    <img class="img-user1 circle" src="../assets/images/user-img/user1.jpg" alt="User Photo">
+                  <!-- </figure> -->
+                  <div class="card-image">
+                    <!-- <a href="#" class="btn-floating btn-large icon-img-text waves-effect waves-light green darken-3">Veg</a> -->
+                    <img src="../assets/images/comi.jpg" alt="veggie-img">
+                    <span class="card-title"><span>Ensalada Super Rica</span></span>
                   </div>
-                </div>
-                  <div class="row">
-                    <!-- Names -->
-                    <div class="input-field col s6">
-                        <input id="first-name" type="text" class="validate">
-                        <label for="first-name">Nombres</label>
-                        <div id="msg1" class="wrong hide">Tu nombre, por favor.</div>
+                  <!-- icons -->
+                  <ul class="card-action-buttons">
+                      <li><a href="#" target="_blank" class="btn-floating waves-effect waves-light white"><i class="material-icons grey-text text-darken-3">share</i></a></li>
+                      <li><a class="btn-floating waves-effect waves-light green darken-2"><i class="material-icons like">favorite_border</i></a></li>
+                      <li><a id="face" class="btn-floating waves-effect waves-light blue"><i class="material-icons star">star</i></a></li>
+                  </ul>
+                  <!-- card contain -->
+                  <div class="card-content">
+                    <div class="row">
+                      <div class="col s12">
+                        <p>
+                          <strong>Descripción:</strong> <br />
+                          Ensalada super nutritiva, en sólo 5 minutos puedes comer super rico.
+                        </p>
+                      </div>
                     </div>
-                    <!-- last name -->
-                    <div class="input-field col s6">
-                        <input id="last-name" type="text" class="validate">
-                        <label for="last-name">Apellidos</label>
-                        <div id="msg2" class="wrong hide">Tu apellido, por favor.</div>
+                    <div class="row">
+                      <div class="chips-style" >
+                        <div class="chip">Veggie</div>
+                        <div class="chip">Saludable</div>
+                        <!-- <div class="chip">Económico</div> -->
+                        <!-- <div class="chip">Rápido</div> -->
+                        <div class="chip"><a href="#">Más...</a></div>
+                      </div>
                     </div>
-                  </div>
-                  <!-- email -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                      <div id="msg3" class="wrong hide">Tu email, por favor.</div>
-                    </div>
-                  </div>
-                  <!-- password -->
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="password" type="password" class="validate">
-                      <label for="password">Contraseña</label>
-                      <div id="msg4" class="wrong hide">Tu contraseña, por favor.</div>
-                    </div>
-                  </div>
-                  <!-- button -->
-                  <br>
-                  <div class="row"> 
-                    <div class="col s12">
-                      <center>
-                        <a id="register-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" href="user-profile.html"> Conéctate</a>
-                        <br>
-                        <br>
-                        <a href="">Olvidastes tu contraseña</a>
-                      </center>
-                    </div>
-                  </div> <!-- row END-->  
-              </form>
-            </div> <!-- row END-->  
-          </div> <!-- modal-content END-->
-          <!-- modal footer button -->
-          <!-- <div class="modal-footer">
-            <center>
-              <a href="#!" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action">Conectate</a>
-              <br>
-              <br>
-              <a href="">Olvidastes tu contraseña</a>
-            </center>    
-            </div> -->
-      </div>
-    </section>
-
-    <!-- modal log in -->
-    <section class="log-in">
-      <!-- Modal Trigger button-->
-      <!-- <a class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal2">Iniciar Sesión</a> -->
-
-      <!-- Modal Structure -->
-      <div id="modal2" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <div class="row bg-gif">
-            <form class="col s12 ">
-              <div class="row">
-                  <div class="">
-                  <br>
-                  <h6 class="strikeThrough center-align"><span>---------------- Inicia Sesión ----------------</span></h3>
-                  <center class="social">
-                    <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
-                    <a href="https://twitter.com" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
-                    <a href="#" id="start-login" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
-                  </center>
-                  <br>
-                  <h6 class="strikeThrough center-align"><span>------------------- O -------------------</span></h3>
-                  </div>
-                </div>
-                <!-- email -->
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="user-email" type="email" class="validate">
-                    <label for="user-email">Email</label>
-                  </div>
-                </div>
-                <!-- password -->
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="user-password" type="password" class="validate">
-                    <label for="user-password">Contraseña</label>
-                  </div>
-                </div>
-                <!-- button -->
-                <br>
-                <div class="row"> 
-                  <div class="col s12">
-                    <center>
-                      <a id="log-in-btn" class="btn waves-effect waves-light light-green accent-4" type="submit"  name="action" href="user-profile.html" >Conéctate</a>
-                      <br>
-                      <br>
-                      <a href="">Olvidastes tu contraseña</a>
-                    </center>
-                  </div>
-                </div> <!-- row END-->  
-              </form>
-            </div> <!-- row END-->  
-          </div> <!-- modal-content END-->
-        <!-- modal footer button -->
-        <!-- <div class="modal-footer">
-        <center>
-          <a href="#!" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action">Conectate</a>
-          <br>
-          <br>
-          <a href="">Olvidastes tu contraseña</a>
-        </center>    
-        </div> -->
-      </div>
-    </section>
+                    <div class="row">
+                      <!-- old comments -->
+                      <div class="text-comments">
+                        <div class="card-action p-10">
+                          <div class="row row1">
+                            <div class="input-field m-0">
+                              <a href="#" class="prefix"><img src="../assets/images/user-img/user1.jpg" alt="user" class="img-user2 circle"></a>
+                              <p class="col s10 m11 l10 right m-0 w-wrap p-10 white">yummy :)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- new comments -->
+                      <div class="card-action p-10">
+                        <div class="row row1">
+                          <div class="input-field m-0">
+                            <a href="#" class="prefix"><img src="../assets/images/user-img/user1.jpg" alt="user" class="img-user2 circle"></a>
+                            <p class="col s10 m11 l10 right m-0 w-wrap p-10 white">Intentaré preparar tu receta</p>
+                          </div>
+                        </div>
+                      </div> <!-- card-action END-->
+                    </div>  <!-- . row END-->
+                  </div> <!-- .card-content END-->
+                </div>  <!-- .card END-->
+              </div> <!-- .product-card END-->
+            </div> <!-- .col l4 m8 s12 offset-m2 offset-l4 END-->
+          </div> <!-- .row END-->
+        </div> <!-- .container END--> <!-- body box END-->
+      </div> <!-- .body-card END--> <!-- body box END-->
+    </section> <!--  text box  comments END-->
   </main>
 
-    <!-- jQuery  -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- firebase.js -->
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <!-- Materialize js Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="vendors/bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- home.js -->
-    <script type="text/javascript" src="../js/home.js"></script>
-    <!-- app.js -->
-    <!-- <script type="text/javascript" src="../js/app.js"></script> -->
+  <!-- jQuery  -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- firebase.js -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- Materialize js Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="vendors/bootstrap/js/bootstrap.min.js"></script> -->
+  <!-- home.js -->
+  <script type="text/javascript" src="../js/app.js"></script>
+  <!-- app.js -->
+  <!-- <script type="text/javascript" src="../js/app.js"></script> -->
 </body>
 </html>

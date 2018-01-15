@@ -1,14 +1,351 @@
-div {width: 225px; height: 400px;
-    background-image: url(https://estelle.github.com/10/files/sprite.png);
-    animation: gangham 4s steps(23,start) infinite,
-      movearound 12s steps(69,end) infinite alternate 44ms;
-    animation-direction: normal, alternate;
-  }
-  @keyframes gangham {
-    0% {background-position: 0 0}
-    100% {background-position: -5175px 0}
-  }
-  @keyframes movearound {
-    0% {transform: translatex(0)}
-    100% {transform: translatex(600px);}
-  }
+/* RESET */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL
+body {
+  /* background: rgb(218, 77, 206); */
+  /* background-image: url(); */
+  /* background-color: blue; */
+  /* height: 100vh; */
+  /* width: 100%; */
+} */
+
+/* ****** MODALS ****** */
+
+/* modal materialize */
+.modal {
+  width: 47vh;
+}
+
+.vh90 {
+  height: 90vh;
+}
+
+.modal.modal-fixed-footer .modal-content {
+  height: calc(100% - 0px);
+}
+
+.bg-gif {
+  background-image: url(https://media.giphy.com/media/3o7TKGAJ7CLp95cNI4/giphy.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  /* opacity: .5; */
+}
+
+.bg-gif1 {
+  /* background-image: url(../assets/images/user-img/fruits-berries-sketch-seamless-background-16082818.jpg); */
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center; 
+  /* opacity: .5; */
+  background-size: 100%;
+}
+
+.btn-modal:nth-of-type(1) {
+  left: 40%;
+}
+
+.slides {
+  height: 90vh;
+}
+
+nav {
+  color: #fff;
+  background-color: #4caf50;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+/* titles */
+/* .strikeThrough {
+  font-size: 1em;
+  position: relative;
+}
+
+.strikeThrough {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: visible;
+}
+
+.strikeThrough:after {
+  content: 'O CONECTATE CON';
+  font-size: 16px;
+  background-color: rgb(244, 236, 232);
+  position: relative;
+  top: -0.8em;
+  padding: 0 2em;
+} */
+
+.register >.row {
+  margin-bottom: -1px;
+}
+
+.log-in >.row {
+  margin-bottom: 5px;
+}
+
+/* underline */
+/* .strikeThrough::before {
+  content: " ";
+  background-color: #1fb941;
+  position: absolute;
+  display: inline-block;
+  margin: .3em .5em -.3em 0;
+  height: .15em;
+  width: 40%;
+} */
+
+/* .strikeThrough::after {
+  content: " ";
+  background-color: #1fb941;
+  position: absolute;
+  display: inline-block;
+  margin: .3em .5em -.3em 0;
+  height: .15em;
+  width: 40%;
+} */
+
+/* Social Icons */
+
+.social {
+  /* position: absolute; */
+  width: 100%;
+  top: 20%;
+  text-align: center;
+  /* transform: translateY(-75%); */
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 1px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+/* forms */
+
+/* .wrong {
+
+} */
+
+
+/* ****** user-profile style  ****** */
+
+/* photos img style */
+.photo-user {
+  /* display: block; */
+  margin: 10px auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  
+}
+
+.img-user1 {
+  width: 60%;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  margin-bottom: -101px;
+  z-index: 1000;
+  position: absolute;
+  top: 9px;
+}
+
+.img-user2 {
+  width: 60%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -4px;
+}
+
+/* titles */
+
+.user-name {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 100px;
+  font-size: 2em;
+  width: 100%;
+  padding: 12px;
+  position: relative;
+}
+
+/* card body style */
+
+.card-title {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.box-card .card {
+  margin: 20px;
+  overflow: hidden;
+}
+
+.box-card .card .card-content {
+  padding: 5px;
+}
+
+.box-card .card .icon-img-text {
+  width: 70px;
+  height: 70px;
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 70px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  letter-spacing: 0;
+}
+
+.box-card ul.card-action-buttons {
+  margin: -18px 7px 0 0;
+  text-align: right;
+}
+
+.box-card ul.card-action-buttons li {
+  display: inline-block;
+  padding-left: 7px;
+}
+
+.veg {
+  width: 20%;
+  padding: 10px;
+}
+
+.veg .card {
+  margin: 0;
+}
+
+.veg .card .card-content {
+  padding: 5px 10px;
+}
+
+.chips-style {
+  width: 95%; 
+  margin: auto;
+}
+
+/* helpers */
+
+.row1 {
+  margin-bottom: 0px;
+}
+
+.m-0 {
+  margin: 0  !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.w-wrap {
+  word-wrap: break-word;
+}
+
+/* ****** chat style  ****** */
+
+.people-list {
+  background: #9e9e9e;
+}
+
+.people-list ul {
+  padding: 20px;
+  height: 770px;
+}
+
+.people-list ul li {
+  padding-bottom: 20px;
+}
+
+.people-list img {
+  float: left;
+}
+
+.people-list .about {
+  float: left;
+  margin-top: 8px;
+}
+
+.people-list .about {
+  padding-left: 8px;
+}
+
+.people-list .status {
+  color: #000000;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.online, .offline, .me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #86BB71;
+}
+
+.offline {
+  color: #E38968;
+}
+
+.me {
+  color: #94C2ED;
+}

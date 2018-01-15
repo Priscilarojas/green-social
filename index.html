@@ -1,47 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>RED SOCIAL modal</title>
-  <!-- Materialize css Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Bootstrap css -->
-  <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-  <!-- <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-  <!-- Raleway font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <!-- Font-awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- Logo favicon -->
-  <!-- <link rel="icon" type="image/png" href="../assets/icons/favicon.png"/> -->
-  <!-- main.css -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- modal.css -->
-  <!-- <link rel="stylesheet" href="../css/modal.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RED SOCIAL modal</title>
+    <!-- Materialize css Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Logo favicon -->
+    <!-- <link rel="icon" type="image/png" href="../assets/icons/favicon.png"/> -->
+    <!-- home.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- modal.css -->
+    <link rel="stylesheet" href="../css/modal.css">
 </head>
 <body>
-  <main>
-    <center>
-      <div>
+  <nav data-activates="mobile-demo" class="button-collapse">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Dimensión Vegana</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Iniciar Sesión</a></li>
+        <!-- <li><a href="#">Registarte</a></li> -->
+        <!-- <li><a href="#">Contacto</a></li> -->
+        <!-- <li><a href="#">Información</a></li> -->
+      </ul>
+      <!-- <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="#">Registarte</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Información</a></li>
+      </ul>
+    </div> -->
+  </nav>
 
+  <!-- slider structure -->
+  <div class="vh90 slider ">
+    <ul class="vh90 slides">
+      <li>
+        <img src="assets/images/asparagus.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Que la comida sea tu alimento y el alimento tu medicina.</h3>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/comi.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Caliente la comida y fría la bebida. Porque para ser sanas deben ser así.</h3>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/maxresdefault.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3> Sueña todo lo que quieras... que los sueños son el alimento del alma, como la comida lo es del cuerpo.</h3>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/santa-fe.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Una comida equilibrada es una especie de poema al desarrollo de la vida.</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- button -->
+  <center>
+    <!-- <a class="dropdown-button btn" href="#" data-activates="dropdown1">Registrate</a> -->
+    <!-- <button id="register-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" disabled>Conéctate</button> -->
+    <!-- <button id="log-in-btn" class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal2">Iniciar Sesión</button>> -->
+    <!-- <button id="log-in-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" disabled>Conectate</button> -->
+    <a class="waves-effect waves-light btn modal-trigger green btn-modal" href="#modal2">Iniciar Sesión</a>
+    <a class="waves-effect waves-light btn modal-trigger green btn-modal" href="#modal1">Registrate</a>
+  </center>
+
+  <main class="bg container">
+    <!-- modal register -->
+    <section class="register">
+        <!-- Modal Trigger button-->
+        <!-- <a class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal1">Registrate</a> -->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <div class="row bg-gif">
+              <form class="col s12 ">
+                <div class="row">
+                  <div class="">
+                    <br>
+                    <h6 class="strikeThrough center-align"><span>Registrate con </span></h3>
+                    <center class="social">
+                      <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+                      <a href="https://twitter.com" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+                      <a href="https://mail.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+                    </center>
+                      <br>
+                      <h6 class="strikeThrough center-align"><span> O </span></h3>
+                  </div>
+                </div>
+                  <div class="row">
+                    <!-- Names -->
+                    <div class="input-field col s6">
+                        <input id="first-name" type="text" class="validate">
+                        <label for="first-name">Nombres</label>
+                        <div id="msg1" class="wrong hide">Tu nombre, por favor.</div>
+                    </div>
+                    <!-- last name -->
+                    <div class="input-field col s6">
+                        <input id="last-name" type="text" class="validate">
+                        <label for="last-name">Apellidos</label>
+                        <div id="msg2" class="wrong hide">Tu apellido, por favor.</div>
+                    </div>
+                  </div>
+                  <!-- email -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                      <div id="msg3" class="wrong hide">Tu email, por favor.</div>
+                    </div>
+                  </div>
+                  <!-- password -->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Contraseña</label>
+                      <div id="msg4" class="wrong hide">Tu contraseña, por favor.</div>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <br>
+                  <div class="row"> 
+                    <div class="col s12">
+                      <center>
+                        <a id="register-btn" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action" href="user-profile.html"> Conéctate</a>
+                        <br>
+                        <br>
+                        <a href="">Olvidastes tu contraseña</a>
+                      </center>
+                    </div>
+                  </div> <!-- row END-->  
+              </form>
+            </div> <!-- row END-->  
+          </div> <!-- modal-content END-->
+          <!-- modal footer button -->
+          <!-- <div class="modal-footer">
+            <center>
+              <a href="#!" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action">Conectate</a>
+              <br>
+              <br>
+              <a href="">Olvidastes tu contraseña</a>
+            </center>    
+            </div> -->
       </div>
-    </center>
+    </section>
+
+    <!-- modal log in -->
+    <section class="log-in">
+      <!-- Modal Trigger button-->
+      <!-- <a class="waves-effect waves-light btn modal-trigger light-green accent-4" href="#modal2">Iniciar Sesión</a> -->
+
+      <!-- Modal Structure -->
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <div class="row bg-gif">
+            <form class="col s12 ">
+              <div class="row">
+                  <div class="">
+                  <br>
+                  <h6 class="strikeThrough center-align"><span>---------------- Inicia Sesión ----------------</span></h3>
+                  <center class="social">
+                    <a href="https://facebook.com" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+                    <a href="https://twitter.com" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+                    <a href="#" id="start-login" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+                  </center>
+                  <br>
+                  <h6 class="strikeThrough center-align"><span>------------------- O -------------------</span></h3>
+                  </div>
+                </div>
+                <!-- email -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="user-email" type="email" class="validate">
+                    <label for="user-email">Email</label>
+                  </div>
+                </div>
+                <!-- password -->
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="user-password" type="password" class="validate">
+                    <label for="user-password">Contraseña</label>
+                  </div>
+                </div>
+                <!-- button -->
+                <br>
+                <div class="row"> 
+                  <div class="col s12">
+                    <center>
+                      <a id="log-in-btn" class="btn waves-effect waves-light light-green accent-4" type="submit"  name="action" href="user-profile.html" >Conéctate</a>
+                      <br>
+                      <br>
+                      <a href="">Olvidastes tu contraseña</a>
+                    </center>
+                  </div>
+                </div> <!-- row END-->  
+              </form>
+            </div> <!-- row END-->  
+          </div> <!-- modal-content END-->
+        <!-- modal footer button -->
+        <!-- <div class="modal-footer">
+        <center>
+          <a href="#!" class="btn waves-effect waves-light light-green accent-4" type="submit" name="action">Conectate</a>
+          <br>
+          <br>
+          <a href="">Olvidastes tu contraseña</a>
+        </center>    
+        </div> -->
+      </div>
+    </section>
   </main>
 
-  <!-- jQuery  -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- firebase.js -->
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <!-- Materialize js Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- <script src="vendors/bootstrap/js/bootstrap.min.js"></script> -->
-  <!-- home.js -->
-  <!-- <script type="text/javascript" src="../js/home.js"></script> -->
-  <!-- app.js -->
-  <script type="text/javascript" src="js/app.js"></script> 
-  </body>
+    <!-- jQuery  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- firebase.js -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!-- Materialize js Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="vendors/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- home.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- app.js -->
+    <!-- <script type="text/javascript" src="../js/app.js"></script> -->
+</body>
 </html>
